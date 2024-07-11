@@ -1,0 +1,11 @@
+# Dependencies
+node_modules
+
+# Keep environment variables out of version control
+.env
+
+# Dist
+dist
+
+# Database
+prisma/dev.db
