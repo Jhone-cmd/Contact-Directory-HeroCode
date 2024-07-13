@@ -3,7 +3,7 @@ import { FastifyInstance } from "fastify";
 
 type FastifyErrorHandler = FastifyInstance['errorHandler'];
 
-export const errorHlander: FastifyErrorHandler = (error, req, reply) => {
+export const errorHandler: FastifyErrorHandler = (error, req, reply) => {
 
     if (error instanceof PrismaClientKnownRequestError) {
         return reply.status(404).send({ 
